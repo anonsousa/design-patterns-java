@@ -2,6 +2,7 @@ package view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Observable;
@@ -27,6 +28,10 @@ public class TelaPis implements TelaImposto, Observer {
         frame.setSize(200, 150);
         frame.setLocation(100, 100);
         frame.setVisible(true);
+    }
+
+    public void addController(ActionListener controller){
+        btnCalc.addActionListener(controller);
     }
 
     @Override
