@@ -1,3 +1,5 @@
+package model;
+
 import java.util.Observable;
 
 public class Pis extends Observable implements Imposto{
